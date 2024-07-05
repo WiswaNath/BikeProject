@@ -33,6 +33,7 @@ class SepedaMotorController extends Controller
                 'kapasitas' => 'required',
                 'warna' => 'required',
                 'harga' => 'required',
+                'gambar'=> 'required'
             ]);
 
             $sepedaMotor = SepedaMotor::create($validatedData);
@@ -64,6 +65,7 @@ class SepedaMotorController extends Controller
                 'kapasitas' => 'required',
                 'warna' => 'required',
                 'harga' => 'required',
+                'gambar' => 'required',
             ]);
 
             $sepedaMotor = SepedaMotor::findOrFail($id);

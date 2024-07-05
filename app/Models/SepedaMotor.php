@@ -15,7 +15,7 @@ class SepedaMotor extends Model
     use HasFactory, HasApiTokens, Notifiable;
 
     protected $table = "sepeda";
-    protected $primaryKey = 'id_sepeda';
+    protected $primaryKey = 'id';
 
     // Tentukan atribut yang dapat diisi
     protected $fillable = [
@@ -24,6 +24,7 @@ class SepedaMotor extends Model
         'kapasitas',
         'warna',
         'harga',
+        'gambar'
     ];
 
     // Tentukan primary key jika bukan 'id'
